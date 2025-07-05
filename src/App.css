@@ -1,29 +1,31 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("C:\Users\mdalt\Downloads\wallpaperflare.com_wallpaper (3).jpg") no-repeat center center fixed;
+  background-size: cover;
+  transition: background 0.5s ease-in-out, color 0.3s;
+}
 
+body.dark-mode { background: #0d1117; color: white; }
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+.app { text-align: center; padding-top: 80px; color: #fff; }
 
-body { margin: 0; padding: 0; font-family: 'Orbitron', sans-serif; transition: background 0.3s ease, color 0.3s ease; }
+.toggle-btn { position: absolute; top: 20px; right: 20px; background: transparent; border: none; font-size: 26px; color: #fff; cursor: pointer; }
 
-.app { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 40px 20px; background-image: url(''); background-size: cover; background-position: center; color: #fff; transition: all 0.3s ease-in-out; }
+.search-box { max-width: 400px; margin: auto; padding: 30px; border-radius: 20px; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #fff; }
 
-.app.dark { background-color: #000; background-blend-mode: overlay; }
+.search-box h2 { margin-bottom: 20px; }
 
-.toggle-container { align-self: flex-end; margin-bottom: 20px; }
+.search-box input { padding: 10px; border-radius: 8px; border: none; width: 70%; margin-right: 10px; }
 
-.toggle-btn { background: rgba(255, 255, 255, 0.2); border: none; color: #fff; font-size: 20px; padding: 10px 12px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(10px); }
+.search-box button { padding: 10px 16px; border-radius: 8px; border: none; background: #00bcd4; color: #fff; cursor: pointer; font-weight: bold; }
 
-.form-container { background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); backdrop-filter: blur(10px); text-align: center; width: 90%; max-width: 400px; }
+.profile-card { margin-top: 40px; background-color: rgba(255, 255, 255, 0.15); padding: 20px; border-radius: 16px; backdrop-filter: blur(10px); width: 300px; margin-left: auto; margin-right: auto; }
 
-input { padding: 10px; width: 80%; border: none; border-radius: 8px; margin: 10px 0; font-size: 16px; }
+.profile-card img { width: 100px; border-radius: 50%; }
 
-button { padding: 10px 20px; font-size: 16px; border: none; background-color: #ffffff; color: #000; border-radius: 8px; cursor: pointer; margin-top: 10px; }
+.profile-card h3 { margin: 10px 0 5px; }
 
-.loader { margin-top: 20px; font-size: 18px; font-weight: bold; animation: pulse 1.2s infinite; }
+.profile-card a { display: inline-block; margin-top: 10px; color: #00bcd4; text-decoration: none; font-weight: bold; }
 
-@keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
-
-.profile-card { margin-top: 30px; padding: 20px; border-radius: 20px; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px); box-shadow: 0 4px 20px rgba(0,0,0,0.4); color: white; text-align: center; width: 90%; max-width: 400px; }
-
-.profile-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; margin-bottom: 10px; }
-
-.profile-card a { color: #00e5ff; text-decoration: none; display: block; margin-top: 10px; font-weight: bold; }
+.error-msg { color: #ff4d4d; font-weight: bold; margin-top :15px ;}
